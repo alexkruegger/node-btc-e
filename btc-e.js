@@ -5,7 +5,7 @@ var request = require('request'),
 
 var BTCE = function(apiKey, secret, options) {
   this.url = 'https://btc-e.com/tapi';
-  this.publicApiUrl = 'https://btc-e.com/api/2/';
+  this.publicApiUrl = 'https://btc-e.com/api/3/';
   this.timeout = 5000;
   this.apiKey = apiKey;
   this.secret = secret;
@@ -100,7 +100,7 @@ BTCE.prototype.makeRequest = function(method, params, callback) {
 
 BTCE.prototype.makePublicApiRequest = function(pair, method, callback) {
   this._sendRequest({
-    url: this.publicApiUrl + pair + '/' + method
+    url: this.publicApiUrl + method + '/' + pair
   }, callback);
 };
 

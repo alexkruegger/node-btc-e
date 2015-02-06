@@ -1,14 +1,14 @@
 node-btc-e
 =====
 
-An unofficial node.js client for the [btc-e trade api](https://btc-e.com/api/documentation) including v2 public api methods(depth, fee, ticker, and trades).
+An unofficial node.js client for the [btc-e trade api](https://btc-e.com/api/documentation) including v3 public api methods(depth, fee, ticker, and trades).
+
+I forked this so we can update it to the v3 public api calls.
 
 ## Installation
 
-node-btc-e is available as `btc-e` on npm.
+git pull this to node_modules directory
 
-```
-npm install btc-e
 ```
 
 ## Usage

@@ -53,7 +53,7 @@ BTCE.prototype._sendRequest = function (options, callback) {
     try {
       result = JSON.parse(body);
     } catch(error) {
-      return callback(error);
+      return callback(new Error(error));
     }
 
     if(result.error) {

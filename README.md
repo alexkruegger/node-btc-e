@@ -3,7 +3,16 @@ node-btc-e
 
 An unofficial node.js client for the [btc-e trade api](https://btc-e.com/api/documentation) including v3 public api methods(depth, fee, ticker, and trades).
 
-I forked this so we can update it to the v3 public api calls.
+[alexkruegger]
+
+!!! Changed
+* Add '?ignore_invalid=1' to avoid error for disabled pair
+* Add support for request options (limit=xxx) for trades / depth call
+* Add support for Public Info request
+
+!!! Warning
+* Private getInfo method has been renamed to getUserInfo to avoid conflict with Public getInfo call
+* 
 
 ## Installation
 
